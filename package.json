@@ -4,7 +4,7 @@
   "description": "aprendiendo a crear rest apis",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./index.js"
   },
   "author": "Edwin Valencia",
   "license": "ISC",

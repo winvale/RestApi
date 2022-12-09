@@ -9,5 +9,7 @@ module.exports = function () {
   //     res.send("nosotros");
   //   });
 
+  //Agreagar nuevos clientes via post
+  router.post("/clientes", clientesController.nuevoCliente);
   return router;
 };

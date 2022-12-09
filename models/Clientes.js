@@ -24,6 +24,9 @@ const clientesSchema = new Schema({
     type: String,
     trim: true,
   },
+  fotoPerfil: {
+    type: String,
+  },
 });
 
 module.exports = mongoose.model("Clientes", clientesSchema);

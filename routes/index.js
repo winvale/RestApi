@@ -4,7 +4,11 @@ const clienteController = require("../controller/clienteController");
 
 module.exports = function () {
   //Agreagar nuevos clientes via post
-  router.post("/clientes", clienteController.nuevoCliente);
+  router.post(
+    "/clientes",
+    clienteController.subirArchivo,
+    clienteController.nuevoCliente
+  );
 
   //obtener clientes
   router.get("/clientes", clienteController.mostrarClientes);

@@ -18,5 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // para leer valores desde l
 //Rutas de la app
 app.use("/", routes());
 
+//carpeta publica
+
 //puerto
 app.listen(5000);

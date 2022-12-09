@@ -14,5 +14,8 @@ module.exports = function () {
 
   //actualizar cliente por id
   router.put("/clientes/:idCliente", clienteController.actualizarCliente);
+
+  //Eliminar cliente por id
+  router.delete("/clientes/:idCliente", clienteController.EliminarCliente);
   return router;
 };

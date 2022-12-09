@@ -44,8 +44,6 @@ exports.nuevoCliente = async (req, res, next) => {
     //subir imagen
     if (req.file.filename) {
       clientes.fotoPerfil = req.file.filename;
-      console.log("holaa" + req.file.filename);
-      console.log(req.file);
     }
     //almacenar el cliente
     await clientes.save();

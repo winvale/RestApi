@@ -38,3 +38,19 @@ exports.mostrarCliente = async (req, res, next) => {
   //Mostrar cliente
   res.json(cliente);
 };
+
+//Actualizar cliente id
+exports.actualizarCliente = async (req, res, next) => {
+  try {
+    const cliente = await Clientes.findByIdAndUpdate(
+      { _id: req.params.idCliente },
+      req.body,
+      {
+        new: true,
+      }
+    );
+    res.json(cliente);
+  } catch (error) {
+    console.log(error);
+  }
+};
